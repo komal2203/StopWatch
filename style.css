@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-align: center;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(back7.jpg);
+  background-repeat: no-repeat;
+  background-size: 80rem 35rem;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopWatch {
+  padding: 2rem;
+  background-color: antiquewhite;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 35%;
+  height: 20%;
+}
+
+.timerDisplay {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.buttons {
+  width: 35%;
+  height: 10%;
+  background-color: antiquewhite;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.btn {
+  padding: 0.4rem;
+  font: 1.2rem;
+  font-weight: 450;
+  border: none;
+  outline: none;
+  margin: 0.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#stopBtn {
+  background-color: rgb(243, 188, 154);
+}
+#stopBtn:hover {
+  background-color: rgb(252, 170, 102);
+  transform: scale(1.1);
+}
+#startBtn {
+  background-color: rgb(253, 230, 169);
+}
+#startBtn:hover {
+  transform: scale(1.1);
+  background-color: rgb(252, 227, 98);
+}
+#resetBtn {
+  background-color: rgb(206, 254, 183);
+}
+#resetBtn:hover {
+  transform: scale(1.1);
+  background-color: rgb(181, 253, 74);
+}
+
+@media (min-width: 800px) {
+  .stopWatch {
+    width: 25%;
+  }
+  .buttons {
+    width: 25%;
+  }
+  .timerDisplay{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .stopWatch {
+    width: 40%;
+  }
+  .buttons {
+    width: 40%;
+  }
+  *{
+    font-size: 0.8rem;
+  }
+  .timerDisplay{
+    font-size: 1.5rem;
+  }
+}
